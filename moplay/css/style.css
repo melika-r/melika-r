@@ -6455,22 +6455,17 @@ label {
 /*====================
 48 
 ======================*/
-.position-relative .back-button button{
+.back-button button{
   background: none;
   border: none;
   outline: none;
 }
-.position-relative .icon-back-button-logo{
+.icon-back-button-logo{
   display: flex;
   justify-content: center;
 }
-.position-relative .icon-back-button-logo .back-button button #icon-back{
- height: 38px;
-width: 38px;
-line-height: 38px;
+.icon-back-button-logo .back-button button i{
 text-align: center;
-border-radius: 50px;
-background: var(--theme-bg2);
 color: var(--theme-color); 
 font-size: 21px;
 }
