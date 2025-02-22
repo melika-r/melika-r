@@ -1,5 +1,5 @@
 function hideIcon(){
-    if(location.href === 'http://127.0.0.1:5500/moplay/index-2.html'){
+    if(location.pathname.endsWith('index-2.html') ){
         document.getElementById("logo-mode").style.display = "block";
         document.getElementById("icon-back").style.display = "none";
     }else{
@@ -7,4 +7,4 @@ function hideIcon(){
          document.getElementById("icon-back").style.display = "block";
     };
 };
-hideIcon();
+window.addEventListener('load', hideIcon);
